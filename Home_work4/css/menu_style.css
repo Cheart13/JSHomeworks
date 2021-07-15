@@ -1,0 +1,63 @@
+h1, p{
+    margin-left: 3.5%;
+    margin-top: 1%;
+    text-align: justify;
+}
+.menu{
+    margin-top: -1%;
+    display: table-cell;
+    background-color: darkslategrey;
+    color: floralwhite;
+    font-size: x-large;
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    left: -27%;
+}
+
+.menu>span{
+    font-size: smaller;
+    position: absolute;
+    top: 50%; /* это свойство очень зависит от ширины екрана и не  отображается как надо как и ниже */
+    left: 80%; 
+    -webkit-transform:rotate(270іdeg);
+    -moz-transform: rotate(270deg);
+    transform: rotate(270deg);
+   
+}
+
+ .menu:hover {
+    color:  darkslategrey; 
+    left: 0%;
+    transition: 1s;
+    
+} 
+.menu:not(:hover){
+    color:  floralwhite; 
+    left: -27%;
+    -webkit-transition: ease-in-out  1s ;
+    -moz-transition: ease-in-out  1s ;
+    transition: ease-in-out  1s ;
+} 
+
+.menuitems{
+    vertical-align: middle;
+    color: floralwhite;
+    line-height: 2;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+
+.menuitems>li::before{
+    content: '\2666';
+    font-size: larger;
+    color:orange;
+    margin: 10px;
+}
+
+.menuitems>li>span:hover{
+    color: coral;
+    cursor: pointer;
+    transition: ease-in 0.3s;
+}

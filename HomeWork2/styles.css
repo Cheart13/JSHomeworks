@@ -1,0 +1,39 @@
+blockquote{
+    background-color: green;
+}
+
+a[href^='https:']{
+    color: red;
+}
+
+ul.list>li:last-child a {
+    background-color: green;
+}
+
+ul[class='list']+p{
+    font-size: 24px;
+}
+/* ---------------------- */
+.text-box>:first-child{color:pink;}
+
+p[id='greycol']{color: gray;}
+
+.text-box div + div>p{color: red;}
+
+.text-box p[id='greycol'] ~ p:not(.yellow){color: green;}
+
+.yellow{color: yellow;}
+
+.bg-box{
+
+    width: 600px;
+    height: 400px;
+
+    /* background-color: green;
+    background-image: url('./img/dom.jpg'), url('./img/grass.png'),  url('./img/lamp.png'),url('./img/ezh.png'), url('./img/p.png');
+    background-size: 50%, 25%, 5%, 5%, 5%;
+    background-position: center,bottom,top,left, right;
+    background-repeat: no-repeat,repeat-x,repeat-x,repeat-y,repeat-y; */
+
+
+}

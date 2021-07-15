@@ -1,0 +1,99 @@
+
+.table1{
+    background-color: #0d5825;
+    width: 700px;
+    height: 500px;
+    font-size: 25px;
+    font-weight: bolder ;
+    color: white;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+
+}
+.table1>blockquote{
+    font-weight: bolder ;
+}
+.table1>p{
+    font-style: italic;
+}
+
+.table1 blockquote::after,.table1 blockquote::before{
+    content: '"';
+    
+
+}
+.carts{
+     margin: 15%;
+    
+}
+
+.carts img{
+    width: 150px;
+    height: auto;
+    border-radius: 5%;
+    position: relative;
+    
+}
+
+.carts .card1{
+    bottom: 5px;
+    left: 21%;
+    -moz-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg); 
+    -ms-transform: rotate(-30deg);  
+    transform: rotate(-30deg);
+}
+
+.carts .card2{
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg); 
+    -ms-transform: rotate(-10deg);  
+    transform: rotate(-10deg);
+}
+
+.carts .card3{
+    top: 15px;
+    right: 24%;
+    -moz-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg); 
+    -ms-transform: rotate(10deg);  
+    transform: rotate(10deg);
+}
+
+/* ex2 */
+.squres{
+    border: 2px solid black;
+    width: 50%;
+    height: 50%;
+    margin: 20px;
+    position: relative;
+    
+}
+.squres>div{
+    width: 100px;
+    height:100px;
+    /*border: 1px solid black;*/
+    position: absolute;
+  
+}
+.sq1{
+    background-color: rgba(255, 0, 0, 0.678);
+    z-index: 1;
+    top: 10%;
+    left: 10%;
+}
+
+.sq2{
+    background-color: rgb(80, 80, 218);
+    z-index: 3;
+    top: 28%;
+    left: 22%;
+}
+
+.sq3{
+    background-color: rgb(54, 141, 54);
+    z-index: 1;
+    top: 45%;
+    left: 34%;
+}

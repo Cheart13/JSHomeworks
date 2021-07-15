@@ -1,0 +1,40 @@
+.elem{
+  width: 350px;
+  height: 220px;
+  padding:15px 10px 20px 10px;
+  margin-bottom: 30px;
+  border: 2px dashed red;
+  background: green;
+  box-sizing: content-box;
+}
+
+body{
+  margin: 0 auto;
+
+}
+
+.imgtext{
+  display:block;
+  float:left;
+  width:90%;
+  margin: 15px 10px 20px 10px;
+
+}
+
+.imgtext img{
+  width: 25%;
+  height: auto;
+  float: left;
+  margin:0 15px 10px 0;
+}
+
+.imgtext img.rightimg{
+  width: 20%;
+  float: right;
+  margin:10px 0 0 15px;
+}
+
+.imgtext>p{
+  text-align: justify;
+  float: left;
+}
