@@ -16,8 +16,8 @@ let teaPlease={
 }
 
 coffeMachine.start();
-coffeMachine.start=coffeMachine.start.bind(teaPlease);
-coffeMachine.start();
+let start =coffeMachine.start.bind(teaPlease);
+start();
 }
 //task1
 {
