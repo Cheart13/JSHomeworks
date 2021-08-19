@@ -21,18 +21,14 @@ start();
 }
 //task1
 {
-console.warn("task1:");
-let switcher=false;
+//console.warn("task1:");
 let numberInputs=0;
-do{
-	switcher=false;
-	numberInputs= prompt("Enter number");
-	if(isNaN(numberInputs)){
-	alert(numberInputs+" is not a number!");
-	switcher=true;
-	}
-}while(switcher);
 
+let number = prompt("Enter number");
+
+while(isNaN(number)&&number!=undefined) {
+  number = prompt("Enter the number");
+}
 for(let i=1;i<=numberInputs;i++){
 	let input= document.createElement("input");
 	input.classList.add('input-item');
