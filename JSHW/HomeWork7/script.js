@@ -22,30 +22,30 @@ coffeMachine.start();
 //task1
 {
 console.warn("task1:");
-let b=false;
-let n=0;
+let switcher=false;
+let numberInputs=0;
 do{
-	b=false;
-	n= prompt("Enter number");
-	if(isNaN(n)){
-	alert(n+" is not a number!");
-	b=true;
+	switcher=false;
+	numberInputs= prompt("Enter number");
+	if(isNaN(numberInputs)){
+	alert(numberInputs+" is not a number!");
+	switcher=true;
 	}
-}while(b);
+}while(switcher);
 
-for(let i=1;i<=n;i++){
+for(let i=1;i<=numberInputs;i++){
 	let input= document.createElement("input");
 	input.classList.add('input-item');
 	input.value=`Input${i}`;
-	if(i===n){
+	if(i===numberInputs){
 		input.classList.add('margin-zero');
 	}
 	document.querySelector('#reg-button').before(input);
 }
 let button=document.querySelector('#reg-button');
-button.addEventListener('click', func);
+button.addEventListener('click', change);
 
-function func(){
+function change(){
 	let items=Array.from(document.querySelectorAll('.input-item'));
 
 	for(let index in items){
@@ -65,39 +65,46 @@ function func(){
 }
 //task2
 {
-let s=0;
-let m=0;
-let h=0;
+let seconds=0;
+let minute=0;
+let hour=0;
 let time;
-let clicker=false;
+let clicker=true;
 let butonStart=document.getElementById('StartButton');
-butonStart.addEventListener('click', timer);//if нажать несколько раз таймер считает сразу несколько секунд
+butonStart.addEventListener('click', start);//if нажать несколько раз таймер считает сразу несколько секунд
 let butonStop=document.getElementById('StopButton');
 butonStop.addEventListener('click', stop);
+function start(){
+	if(clicker){
+		timer();	
+	}
+	clicker=false;
+}
 function timer(){
 	
-	time=setTimeout('timer()',1000);
-	
-	s++;
-	if(s==60){
-		s=0;
-		m++;
+	time=setInterval(second, 1000);
+	function second(){
+	seconds++;
+	if(seconds==60){
+		seconds=0;
+		minute++;
 	}
-	if(m==60){
-		m=0;
-		h++;
+	if(minute==60){
+		minute=0;
+		hour++;
 	}
-	document.getElementById('timer').innerHTML= `Timer: ${h}:${m}:${s}`;
-	
+	document.getElementById('timer').innerHTML= `Timer: ${hour}:${minute}:${seconds}`;
 	
 }
+}
 function stop(){
-	s=0;
-	m=0;
-	h=0;
+	seconds=0;
+	minute=0;
+	hour=0;
 	
 	clearInterval(time);
-	document.getElementById('timer').innerHTML=`Timer: ${h}:${m}:${s}`;
+	clicker=true;
+	document.getElementById('timer').innerHTML= `Timer: ${hour}:${minute}:${seconds}`;
 }
 
 }
