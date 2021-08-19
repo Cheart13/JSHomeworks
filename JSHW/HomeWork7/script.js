@@ -22,18 +22,18 @@ start();
 //task1
 {
 //console.warn("task1:");
-let numberInputs=0;
+let number=0;
 
-let number = prompt("Enter number");
+number = prompt("Enter number");
 
-while(isNaN(number)&&number!=undefined) {
+while(isNaN(number)||number==undefined) {
   number = prompt("Enter the number");
 }
-for(let i=1;i<=numberInputs;i++){
+for(let i=1;i<=number;i++){
 	let input= document.createElement("input");
 	input.classList.add('input-item');
 	input.value=`Input${i}`;
-	if(i===numberInputs){
+	if(i===number){
 		input.classList.add('margin-zero');
 	}
 	document.querySelector('#reg-button').before(input);
@@ -79,28 +79,24 @@ function start(){
 function timer(){
 	
 	time=setInterval(second, 1000);
+	
 	function second(){
-	seconds++;
-	if(seconds==60){
-		seconds=0;
-		minute++;
+	let date=new Date();
+	let times={
+		seconds:date.getSeconds(),
+		minutes:date.getMinutes(),
+		hours:date.getHours(),
+
 	}
-	if(minute==60){
-		minute=0;
-		hour++;
-	}
-	document.getElementById('timer').innerHTML= `Timer: ${hour}:${minute}:${seconds}`;
+	document.getElementById('timer').innerHTML= ` ${times.hours}:${times.minutes}:${times.seconds}`;
 	
 }
 }
 function stop(){
-	seconds=0;
-	minute=0;
-	hour=0;
 	
 	clearInterval(time);
 	clicker=true;
-	document.getElementById('timer').innerHTML= `Timer: ${hour}:${minute}:${seconds}`;
+	//document.getElementById('timer').innerHTML= date;
 }
 
 }
