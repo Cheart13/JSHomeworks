@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.button-group {
+  display: flex;
+  justify-content: center;
+}
+.input-item {
+  margin: 5px;
+}
+button {
+  background-color: blue;
+  color: white;
+  padding: 0 10px;
+  margin: 5px;
+}
+
+.background {
+  background-color: chartreuse;
+}
