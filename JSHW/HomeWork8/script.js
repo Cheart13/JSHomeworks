@@ -255,6 +255,8 @@ let str = 'Hi I am ALex';
 console.log(razvorot_for_str(str));
 let num=1234678;
 console.log(razvorot_for_numbers(num));
+let mas2=[44, 12, 11, 7, 1, 99, 43, 5, 69]
+console.log(razvorot(mas2));
 console.log(toUpper_case(str));
 console.log(toLower_case(str));
 console.log(toUper_case_forMas(mas));
