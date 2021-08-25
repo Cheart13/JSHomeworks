@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="81cea940-a78d-44da-96a4-7ad9c0789c63" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Homework6/css/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework6/css/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework6/css/Style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework6/css/Style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework6/css/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework6/css/style2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework6/img/nature_1280x1020.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework6/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework6/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1wGVeRMzCytxRYwmr1tFN0APjyN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="81cea940-a78d-44da-96a4-7ad9c0789c63" name="Default Changelist" comment="" />
+      <created>1628085011629</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628085011629</updated>
+    </task>
+    <servers />
+  </component>
+</project>

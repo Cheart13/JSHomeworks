@@ -113,7 +113,7 @@ let arrow_create_arr_even_numbers=()=>{
 	return arr;
 }
 
-//6
+//6--------------------
 
 function findmax(arr){
 	let max=arr[0];
@@ -125,8 +125,9 @@ function findmax(arr){
 	return max;
 }
 function find_in(arr, num){
-	
-	for(let index=0;index<arr.length;index++){
+	let arrlength = arr.length;
+
+	for(let index=0;index<arrlength;index++){
 		if(arr[index]===num){
 			return index;
 		}
@@ -136,12 +137,13 @@ function find_in(arr, num){
 }
 
 function sort(arr, param){
-	let switcer=true;//true
 	let sort_arr=[];
 	let temp_arr=[];
+	let arrlength = arr.length;
 	temp_arr=Object.assign(temp_arr, arr);
 	console.log(temp_arr)
-	for(let i=0;i<arr.length;i++){
+	for(let i=0;i<arrlength;i++){
+
 		let max = findmax(arr);
 		let ind = find_in(arr, max);
 		arr[ind]=0;
@@ -149,7 +151,6 @@ function sort(arr, param){
 			sort_arr.push(max);
 		}
 		else{sort_arr.unshift(max);}
-		
 
 	}
 	
@@ -194,7 +195,8 @@ let arr_find=(arr, wanted)=>{
 
 let razvorot = function (arr){
 	let temp=[];
-	for(let i=arr.length-1;i>=0;i--){
+	let arrlength = arr.length;
+	for(let i=arrlength-1;i>=0;i--){
 		temp.push(arr[i]);
 	}
 	return temp;
@@ -216,8 +218,9 @@ let razvorot_for_numbers = function (num){
 }
 
 function toUpper_case(str){
+	let arrlength = str.length;
 	let strU = [];
-	for(let i=0;i<str.length;i++){
+	for(let i=0;i<arrlength;i++){
 
 		strU.push(str[i].toUpperCase());
 	}
@@ -226,8 +229,9 @@ function toUpper_case(str){
 }
 
 function toLower_case(str){
+	let arrlength = str.length;
 	let strL = [];
-	for(let i=0;i<str.length;i++){
+	for(let i=0;i<arrlength;i++){
 
 		strL.push(str[i].toLowerCase());
 	}
@@ -235,15 +239,15 @@ function toLower_case(str){
 	return strL.join('');
 }
 function toUper_case_forMas(arr){
-	
-	for(let i=0;i<arr.length;i++){
+	let arrlength = arr.length;
+	for(i=0;i<arrlength;i++){
 		arr[i]=toUpper_case(arr[i]);
 	}
 	return arr;
 }
 function toLower_case_forMas(arr){
-	
-	for(let i=0;i<arr.length;i++){
+	let arrlength = arr.length;
+	for(let i=0;i<arrlength;i++){
 		arr[i]=toLower_case(arr[i]);
 	}
 	return arr;
